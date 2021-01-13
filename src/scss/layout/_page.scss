@@ -1,7 +1,142 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background: url("../images/logo-adalab.png") center center no-repeat
-    $color-white;
-  font-family: $font-main;
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+  // height: 80vh;
+  padding: 100px 50px 0 50px;
+  &__title {
+    color: $color-start;
+    padding: 25px 0 15px 0;
+    font-size: 20px;
+  }
+  &__description {
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 15px;
+  }
 }
+
+.projects {
+  text-align: center;
+  padding: 50px 32px;
+  // border-top: 1px solid var(--yellow);
+  &__title {
+    max-width: 640px;
+    margin: 25px 0 20px 0;
+    color: $color-start;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    // &:hover {
+    //   // background-color: var(--yellow);
+    // }
+  }
+
+  // &--title {
+  //   display: inline;
+  //   color: var(--dark);
+  //   margin-right: 0;
+  //   padding: 0;
+  // }
+}
+.container {
+  background: linear-gradient(90deg, #4a306d 0%, #0fa3b1 100%);
+  padding: 20px 20px 60px 20px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 10%;
+  // box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  &__link {
+    // background: var(--main-gray);
+    text-decoration: none;
+    color: $color-white;
+    &--title {
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+    &--image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// @media (max-width: 320px) {
+//   .projects-section-header {
+//     font-size: 15px;
+//   }
+//   .project-title {
+//     font-size: 15px;
+//   }
+//   .projects-section {
+//     padding: 6rem 1rem;
+//   }
+//   .projects-grid {
+//     grid-template-columns: 1fr;
+//   }
+// }
+.contact {
+  background-color: $color-contact;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+  height: 80vh;
+  padding: 50px 50px;
+  // border-top: 1px solid var(--yellow);
+  &__description {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      font-size: 20px;
+    }
+    &--paragraph {
+      font-family: 'Nanum Gothic Coding', monospace;
+      padding-top: 15px;
+      font-size: 15px;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    // width: 100%;
+    // max-width: 980px;
+    padding-top: 64px;
+    flex-wrap: nowrap;
+    &--details {
+      font-size: 12px;
+      margin-right: 10px;
+      padding: 10px;
+      transition: transform 0.3s ease-out;
+      background: linear-gradient(45deg, rgba(74, 48, 109, 1) 0%, rgba(15, 163, 177, 1) 100%);
+      color: $color-contact;
+      border-radius: 15%;
+      :hover {
+        transform: translateY(8px);
+      }
+    }
+  }
+}
+
+// @media (max-width: 320px) {
+//   .contact-title {
+//     font-size: 25px;
+//   }
+//   .contact-details {
+//     font-size: 15px;
+//     text-shadow: none;
+//   }
+//   .contact-details i {
+//     padding-right: 10px;
+//   }
+// }

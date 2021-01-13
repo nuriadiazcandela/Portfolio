@@ -1,8 +1,18 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 32px;
+  background: $color-footer;
+  color: $color-welcome;
 }
+
+// footer > p {
+//   color: $color-white;
+//   font-size: 15px;
+// }
+
+// @media (max-width: 320px) {
+//   footer p {
+//     font-size: 12px;
+//   }
+// }
