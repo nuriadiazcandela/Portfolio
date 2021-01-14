@@ -3,7 +3,8 @@
 	"version": "3.0.0",
 	"description": "Adalab web starter kit",
 	"dependencies": {
-		"browser-sync": "^2.26.7",
+		"axios": "^0.21.1",
+		"browser-sync": "^2.26.13",
 		"del": "^5.1.0",
 		"eslint": "^7.1.0",
 		"gulp": "^4.0.2",
@@ -19,6 +20,9 @@
 		"gulp-sourcemaps": "*",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-zip": "*",
+		"http-proxy": "^1.18.1",
+		"node-notifier": "^9.0.0",
+		"object-path": "^0.11.5",
 		"run-sequence": "*"
 	},
 	"devDependencies": {
