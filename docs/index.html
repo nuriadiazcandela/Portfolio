@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuria | Programadora Frontend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <header class="header" id="header">
+        <nav id="navbar" class="header__nav">
+          <ul class="header__nav--list">
+            <li>
+              <a class="header__nav--link" href="#about">Sobre mi</a>
+            </li>
+            <li>
+              <a class="header__nav--link" href="#projects">Proyectos</a>
+            </li>
+            <li>
+              <a class="header__nav--link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <section id="welcome" class="welcome">
+          <div class="welcome__intro">
+            <h1 class="welcome__intro--title">
+              ¡Hola! Soy <span class="welcome__intro--name">Nuria</span>, <br />Junior Front End Developer
+            </h1>
+            <a href="#contact"><button class="welcome__intro--btn">¿Hablamos?</button></a>
+          </div>
+          <div class="welcome__img">
+            <img
+              class="welcome__img--illustration"
+              src="../assets/images/ilustracion.jpeg"
+              alt="ilustracion chica con portatil"
+            />
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="about">
+          <h2 class="about__title">Sobre mi</h2>
+          <p class="about__description">Estudié Administración y Dirección de Empresas. <br> Y aunque cada experiencia me ha enriquecido profesional y personalmente, decidí dar un paso más y dar un giro a mi futuro profesional, siendo Desarrolladora Front-end.
+            <br>Considero que el éxito está en trabajar en lo que a uno le apasiona, por eso tomé esa arriesgada decisión. </p>
+        </section>
+        <section id="projects" class="projects">
+          <h2 class="projects__title">Mis proyectos</h2>
+          <div class="projects__grid">
+            <article class="container">
+              <a
+                href="https://nuriadiazcandela.github.io/React-project-Rick-Morty-finder/#/"
+                target="_blank"
+                class="container__link">
+                <p class="container__link--title">Buscador personajes Rick y Morty</p>
+                <img class="container__link--image" src="./assets/images/rick.png" alt="project" />
+              </a>
+            </article>
+            <article class="container">
+              <a
+                href="https://nuriadiazcandela.github.io/JS-Buscador-de-series/"
+                target="_blank"
+                class="container__link"
+              >
+                <p class="container__link--title">Buscador de series</p>
+                <img class="container__link--image" src="./assets/images/series.png" alt="project" />
+              </a>
+            </article>
+            <article class="container">
+              <a
+                href="https://nuriadiazcandela.github.io/Adivina-el-numero/"
+                target="_blank"
+                class="container__link"
+              >
+                <p class="container__link--title">Adivina el número</p>
+                <img class="container__link--image" src="./assets/images/adivina.png" alt="project" />
+              </a>
+            </article>
+            <article class="container">
+              <a
+                href="https://nuriadiazcandela.github.io/Pokemon-React/"
+                target="_blank"
+                class="container__link"
+              >
+                <p class="container__link--title">Mi lista de Pokemon</p>
+                <img class="container__link--image" src="./assets/images/pokemon.png" alt="project" />
+              </a>
+            </article>
+            <article class="container">
+              <a
+                href="https://github.com/nuriadiazcandela/Montgomery-Cards-Project/"
+                target="_blank"
+                class="container__link"
+              >
+                <p class="container__link--title">Montgomery Cards</p>
+                <img class="container__link--image" src="./assets/images/cards.png" alt="project" />
+              </a>
+            </article>
+          </div>
+        </section>
+        <section id="contact" class="contact">
+          <div class="contact__description">
+            <h2 class="contact__description--title">¿Hablamos?</h2>
+            <p class="contact__description--paragraph">
+              Estoy buscando mi primera oportunidad como desarrolladora Front End. Si crees que mi perfil
+              encaja con lo que buscas o quieres darme feedback sobre mis proyectos ¡no dudes en
+              contactarme! &#128516
+            </p>
+          </div>
+          <div class="contact__links">
+            <a
+              href="https://www.linkedin.com/in/nuriadiazcandela/"
+              target="_blank"
+              class="contact__links--details"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a
+              id="profile-link"
+              href="https://github.com/nuriadiazcandela"
+              target="_blank"
+              class="contact__links--details"
+              ><i class="fab fa-github-square fa-2x"></i
+            ></a>
+            <a href="mailto:nuriadiazcandela@gmail.com" class="contact__links--details"
+              ><i class="fas fa-envelope fa-2x"></i
+            ></a>
+            <a
+              id="profile-link"
+              href="https://drive.google.com/file/d/1FGidpA3ScDHyymg4x0CZiq8eYNQqkMmS/view?usp=sharing"
+              target="_blank"
+              class="contact__links--details"
+              ><i class="fas fa-file-download fa-2x"></i></a>
+          </div>
+        </section>
+        
+      </main>
+
+      <footer class="footer">
+        <div class="footer__small">
+          <p>&copy; Made with 💜 by Nuria D.</p>
+        </div>
+        <div class="footer__home">
+          <a class="footer__home--link" href="#header">
+            <i class="footer__home--arrow fas fa-angle-double-up"></i>Inicio
+          </a>
+        </div>
+      </footer>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
