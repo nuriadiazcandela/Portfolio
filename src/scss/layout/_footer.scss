@@ -1,18 +1,30 @@
 .footer {
   display: flex;
-  justify-content: space-evenly;
-  padding: 32px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 20px;
   background: $color-footer;
   color: $color-welcome;
+  @media (min-width: 1024px) {
+    padding: 32px 50px;
+  }
+  &__small {
+    font-size: 10px;
+    @media (min-width: 1024px) {
+      font-size: 12px;
+    }
+  }
+  &__home {
+    font-size: 15px;
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+    &--link {
+      text-decoration: none;
+      color: $color-welcome;
+    }
+    &--arrow {
+      padding-right: 10px;
+    }
+  }
 }
-
-// footer > p {
-//   color: $color-white;
-//   font-size: 15px;
-// }
-
-// @media (max-width: 320px) {
-//   footer p {
-//     font-size: 12px;
-//   }
-// }

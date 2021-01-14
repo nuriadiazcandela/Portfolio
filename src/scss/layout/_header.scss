@@ -2,21 +2,33 @@
   height: 100vh;
   width: 100vw;
   background: $color-welcome;
+  padding: 0 10px;
   &__nav {
-    // background-color: $color-welcome;
     display: flex;
     justify-content: center;
-    // color: $color-start;
+
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+    }
     &--list {
       display: flex;
       list-style: none;
       padding: 32px;
       font-size: 12px;
+      @media (min-width: 768px) {
+        font-size: 18px;
+      }
     }
     &--link {
       text-decoration: none;
       color: $color-start;
       padding-right: 12px;
+      @media (min-width: 768px) {
+        padding-right: 20px;
+      }
+      @media (min-width: 1024px) {
+        padding: 32px;
+      }
       &:hover {
         background: $color-contact;
         border-radius: 10px;
@@ -28,7 +40,6 @@
 }
 
 .welcome {
-  // padding-top: 100px;
   padding-top: 70px;
   display: flex;
   flex-direction: column;
@@ -37,12 +48,22 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 30px 50px;
+  }
   &__intro {
     display: flex;
     flex-direction: column;
     &--title {
       font-size: 22px;
       color: $color-start;
+      @media (min-width: 768px) {
+        font-size: 30px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 50px;
+      }
     }
     &--name {
       color: $color-contact;
@@ -57,40 +78,21 @@
       border: none;
       border-radius: 30px;
       margin-top: 30px;
-      // cursor: pointer;
       box-shadow: 1px 3px 10px #0a00006e;
+      cursor: pointer;
     }
   }
   &__img {
     background: $color-welcome;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     align-items: center;
     padding-top: 20px;
     &--illustration {
       width: 50%;
+      @media (min-width: 1024px) {
+        width: 70%;
+      }
     }
   }
 }
-
-// @media (max-width: 320px) {
-//   .nav {
-//     font-size: 15px;
-//     flex-direction: column;
-//   }
-//   .nav-list,
-//   a {
-//     padding: 10px;
-//   }
-// }
-
-// @media (max-width: 320px) {
-//   h1 {
-//     font-size: 40px;
-//     padding-top: 0;
-//   }
-//   p {
-//     font-size: 15px;
-//   }
-// }
