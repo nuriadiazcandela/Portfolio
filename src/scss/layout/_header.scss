@@ -56,6 +56,8 @@
     &--title {
       font-size: 30px;
       color: $color-start;
+      padding-left: 10px;
+      padding-right: 10px;
       @media (min-width: 1024px) {
         font-size: 50px;
       }
