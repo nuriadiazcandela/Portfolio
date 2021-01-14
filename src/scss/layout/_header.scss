@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100vw;
   background: $color-welcome;
-  padding: 0 10px;
   &__nav {
     display: flex;
     justify-content: center;
@@ -40,7 +39,7 @@
 }
 
 .welcome {
-  padding-top: 70px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,7 +55,7 @@
     display: flex;
     flex-direction: column;
     &--title {
-      font-size: 22px;
+      font-size: 25px;
       color: $color-start;
       @media (min-width: 768px) {
         font-size: 30px;
@@ -69,7 +68,7 @@
       color: $color-contact;
     }
     &--btn {
-      width: 240px;
+      width: 150px;
       height: 50px;
       font-size: 18px;
       letter-spacing: 1px;
@@ -78,8 +77,11 @@
       border: none;
       border-radius: 30px;
       margin-top: 30px;
-      box-shadow: 1px 3px 10px #0a00006e;
       cursor: pointer;
+      @media (min-width: 1024px) {
+        width: 240px;
+        box-shadow: 1px 3px 10px #0a00006e;
+      }
     }
   }
   &__img {
