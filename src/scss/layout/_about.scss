@@ -1,0 +1,57 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px 0 50px;
+  background: linear-gradient(90deg, #0fa3b1 0%, #b5ffdb 100%);
+  @media (min-width: 1024px) {
+    padding-bottom: 50px;
+  }
+  &__title {
+    color: $color-start;
+    padding: 25px 0 15px 0;
+    font-size: 20px;
+    @media (min-width: 1024px) {
+      font-size: 35px;
+      padding-bottom: 40px;
+    }
+  }
+  &__description {
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 15px;
+    padding-bottom: 50px;
+    @media (min-width: 1024px) {
+      font-size: 20px;
+      text-align: justify;
+    }
+  }
+  &__skills {
+    font-size: 20px;
+    color: $color-start;
+    padding-bottom: 15px;
+    @media (min-width: 1024px) {
+      font-size: 35px;
+      padding-bottom: 30px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 10px;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    @media (min-width: 1024px) {
+      font-size: 15px;
+    }
+    &--item {
+      padding-bottom: 10px;
+      @media (min-width: 1024px) {
+        padding: 20px 20px 20px 20px;
+      }
+    }
+  }
+}

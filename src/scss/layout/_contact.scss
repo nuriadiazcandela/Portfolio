@@ -1,0 +1,51 @@
+.contact {
+  background-color: $color-contact;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 50px 50px;
+  &__description {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      font-size: 20px;
+      @media (min-width: 1024px) {
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+    &--paragraph {
+      font-family: 'Nanum Gothic Coding', monospace;
+      padding-top: 15px;
+      font-size: 15px;
+      @media (min-width: 1024px) {
+        font-size: 20px;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    flex-wrap: nowrap;
+    &--details {
+      font-size: 12px;
+      margin-right: 10px;
+      padding: 10px;
+      transition: transform 0.3s ease-out;
+      background: linear-gradient(45deg, rgba(74, 48, 109, 1) 0%, rgba(15, 163, 177, 1) 100%);
+      color: $color-contact;
+      border-radius: 15%;
+      @media (min-width: 1024px) {
+        font-size: 20px;
+        margin-right: 30px;
+      }
+      :hover {
+        transform: translateY(8px);
+      }
+    }
+  }
+}
