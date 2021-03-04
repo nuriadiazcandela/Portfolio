@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 32px 20px;
   background: $color-footer;
-  color: $color-welcome;
+  color: $color-white;
   @media (min-width: 1024px) {
     padding: 32px 50px;
   }
@@ -21,7 +21,7 @@
     }
     &--link {
       text-decoration: none;
-      color: $color-welcome;
+      color: $color-white;
     }
     &--arrow {
       padding-right: 10px;
