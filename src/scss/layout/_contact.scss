@@ -26,6 +26,10 @@
         padding-left: 50px;
         padding-right: 50px;
       }
+      @media (min-width: 1500px) {
+        padding-left: 250px;
+        padding-right: 250px;
+      }
     }
   }
   &__links {
