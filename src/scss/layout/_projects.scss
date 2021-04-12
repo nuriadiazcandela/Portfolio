@@ -28,6 +28,13 @@
       grid-template-columns: auto auto auto;
     }
   }
+  &__paragraph {
+    font-family: 'Nanum Gothic Coding', monospace;
+    &--link {
+      text-decoration: none;
+      font-family: 'Nanum Gothic Coding', monospace;
+    }
+  }
 }
 .container {
   background: linear-gradient(90deg, #4a306d 0%, #0fa3b1 100%);
