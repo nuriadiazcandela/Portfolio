@@ -28,10 +28,9 @@
         padding: 32px;
       }
       &:hover {
-        background: $color-contact;
-        border-radius: 10px;
-        height: 15px;
-        padding: 5px;
+        color: $color-contact;
+        text-decoration: underline;
+        transition: linear 0.2s;
       }
     }
   }
