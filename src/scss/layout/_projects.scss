@@ -29,10 +29,11 @@
     }
   }
   &__paragraph {
-    font-family: 'Nanum Gothic Coding', monospace;
+    // font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 20px;
     &--link {
       text-decoration: none;
-      font-family: 'Nanum Gothic Coding', monospace;
+      // font-family: 'Nanum Gothic Coding', monospace;
     }
   }
 }
@@ -54,11 +55,17 @@
       width: 100%;
       object-fit: cover;
       padding-bottom: 10px;
+      border-radius: 20px;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: scale(0.9);
+      }
     }
     &--description {
-      font-size: 12px;
+      font-size: 14px;
       padding-bottom: 5px;
       color: $color-white;
+      font-family: 'Nanum Gothic Coding', monospace;
     }
     &--code {
       color: $color-white;
