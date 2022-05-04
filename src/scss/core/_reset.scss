@@ -3,7 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Audiowide', cursive;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #b5ffdb, #5cd0d2, #019dc5, #2c68a5, #4a306d);
+  border-radius: 5px;
 }

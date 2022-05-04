@@ -24,8 +24,11 @@
     height: 100%;
     margin: 0 auto;
     margin-bottom: 96px;
-    @media (min-width: 1024px) {
-      grid-template-columns: auto auto auto;
+    @media (min-width: 768px) {
+      grid-template-columns: auto auto;
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: auto auto auto auto;
     }
   }
   &__paragraph {
